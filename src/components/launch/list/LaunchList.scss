@@ -1,0 +1,36 @@
+.launch-list {
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-height: 24rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      background-color: #f5f5f5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      background-color: #555;
+      height: 40%;
+    }
+  }
+  &__launch {
+    flex: 1;
+    flex-basis: calc(100% / 3 - 1rem);
+  }
+}

@@ -1,0 +1,15 @@
+.launch-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 1rem;
+  background: var(--background-color);
+  &__name {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  &__id {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,75 @@
+.launch-details {
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  &__error {
+    background-color: var(--background-color);
+    padding: 2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  &__launch {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-rows: max-content 8rem max-content;
+    grid-template-areas:
+      'name . indicator'
+      '. . .'
+      'time-elapsed . id';
+    font-size: 1.2rem;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 1.1rem;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: 1rem;
+    }
+
+    .launch {
+      &__name {
+        grid-area: name;
+        font-size: 2em;
+        font-weight: bold;
+      }
+      &__indicator {
+        grid-area: indicator;
+        justify-self: flex-end;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        &--success {
+          background-color: green;
+        }
+        &--failure {
+          background-color: red;
+        }
+      }
+      &__time-elapsed {
+        grid-area: time-elapsed;
+        .time-elapsed {
+          &__label {
+            font-weight: 500;
+          }
+          &__value {
+            margin-top: 0.5rem;
+            font-size: 1.1em;
+          }
+        }
+      }
+      &__id {
+        grid-area: id;
+        align-self: flex-end;
+        font-size: 1.1em;
+      }
+    }
+  }
+}

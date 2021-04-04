@@ -1,0 +1,21 @@
+@import 'normalize';
+
+:root {
+  --background-color: #e0e0e0;
+  --text-color: #6f7071;
+}
+
+body {
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+input,
+button {
+  color: inherit;
+  background-color: var(--background-color);
+  border: none;
+  outline: none;
+  padding: 1rem;
+  text-align: center;
+}

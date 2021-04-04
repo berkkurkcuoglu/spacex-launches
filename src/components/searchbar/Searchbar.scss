@@ -1,0 +1,18 @@
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__input {
+    &::placeholder {
+      color: inherit;
+    }
+  }
+  &__button {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}

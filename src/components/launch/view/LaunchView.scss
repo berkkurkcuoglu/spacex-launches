@@ -1,0 +1,11 @@
+.launch-view {
+  width: 70%;
+  height: 70vh;
+  margin: 15vh auto;
+  &__searchbar {
+    margin-bottom: 2rem;
+  }
+  &__details {
+    margin-bottom: 2rem;
+  }
+}
